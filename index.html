@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> <!-- Подключаем внешний JavaScript -->
+</head>
+<body>
+    <!-- Музыка с автозапуском через JavaScript -->
+    <audio id="background-music" loop>
+        <source src="file:///C:/Users/SystemX/Desktop/my-project/music/chifkif.mp3" type="audio/mp3">
+        Ваш браузер не поддерживает элемент аудио.
+    </audio>
+
+    <video autoplay muted loop class="background-video">
+        <source src="videos/main.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="profile-card">
+        <div class="avatar" style="background-image: url('images/ava.jpg');"></div>
+        <div class="nickname">Андрей Аноним</div>
+        <div class="description">C# пастерок ChatGPT 4.0 амбассадор</div>
+
+        <div class="social-buttons">
+            <a href="https://www.youtube.com/@rafsimons3500" target="_blank" class="youtube">
+                <img src="images/youtube.png" alt="YouTube">
+            </a>
+            <a href="https://t.me/sazderrr" target="_blank" class="telegram">
+                <img src="images/telegram.png" alt="Telegram">
+            </a>
+            <a href="javascript:void(0);" onclick="copyToClipboard('vorvzak0ne_777')" class="discord discord-button">
+                <img src="images/discord.png" alt="Discord">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
