@@ -236,6 +236,51 @@ body {
         opacity: 0;
     }
 }
+/* Стиль для аудио контролов */
+.audio-controls {
+    position: fixed; /* фиксируем элемент на экране */
+    left: 10px; /* отступ от левого края */
+    bottom: 10px; /* отступ от нижнего края */
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* полупрозрачный фон для контраста */
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000; /* обеспечиваем, чтобы элемент был поверх других */
+    display: flex; /* Чтобы выровнять элементы */
+    align-items: center;
+}
+
+#volume-control {
+    width: 150px;
+    margin-left: 10px;
+}
+
+#sound-icon {
+    width: 30px; /* Размер иконки */
+    height: 30px; /* Размер иконки */
+    margin-right: 10px;
+    cursor: pointer; /* Курсор как указатель */
+}
+.audio-controls {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#audio-controls img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+#audio-controls input[type="range"] {
+    width: 150px;
+}
+
+
 
 
 

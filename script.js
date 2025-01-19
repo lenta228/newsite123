@@ -131,3 +131,15 @@ function showCopyNotification(message) {
         notification.remove();
     }, 3000); // 3 секунды
 }
+document.addEventListener('DOMContentLoaded', function () {
+    const audio = document.getElementById('background-audio');
+    const volumeControl = document.getElementById('volume-control');
+
+    // Устанавливаем громкость по умолчанию
+    audio.volume = 0.1;
+
+    // Обработчик изменения громкости
+    volumeControl.addEventListener('input', function () {
+        audio.volume = volumeControl.value;
+    });
+});

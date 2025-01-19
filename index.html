@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>anonim.net</title>
+
+    <!-- Иконка сайта -->
+    <link rel="icon" href="images/anonim.png" type="image/png">
+
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
@@ -44,5 +48,13 @@
             </a>
         </div>
     </div>
+
+    <!-- Контейнер для аудио контролов -->
+    <div class="audio-controls">
+        <!-- Картинка слева от слайдера -->
+        <img src="images/soundicon.png" alt="Sound Icon" id="sound-icon">
+        <input type="range" id="volume-control" min="0" max="1" step="0.01" value="0.1">
+    </div>
+
 </body>
 </html>
